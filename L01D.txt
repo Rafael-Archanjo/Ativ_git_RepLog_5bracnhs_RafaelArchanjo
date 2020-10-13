@@ -1,0 +1,41 @@
+algoritmo "Calculadora de gasto de gasolina"
+// Função :
+// Autor : Rafael Archanjo
+// Data : 02/10/2020
+// Seção de Declarações
+var
+//12km por litro
+tempo : real
+velocidade_media : real
+distancia : real
+gasolina_usada : real
+inicio
+escreval ("Caso não saiba um valor insira como valor 0(zero)")
+escreva ("Escreva o tempo que durou sua viagem(em horas):")
+leia (tempo)
+escreva ("Escreva qual foi a distância percorrida(em km):")
+leia (distancia)
+escreva ("Escreva qual foi a velocidade média percorrida(em Km/h):")
+leia (velocidade_media)
+
+se tempo = 0 entao
+tempo <- distancia/velocidade_media
+fimse
+
+se velocidade_media = 0 entao
+velocidade_media <- distancia/tempo
+fimse
+
+se distancia = 0 entao
+distancia <- velocidade_media*tempo
+fimse
+
+
+gasolina_usada <- distancia/12
+escreval ("------------------------------------------------------------------")
+escreval ("O tempo gasto em sua viagem foi de",tempo," ","horas")
+escreval ("A distancia percorrida foi de ",distancia," ","Kms")
+escreval ("A velocidade média foi de ",velocidade_media," ","Km/h")
+escreval ("A quantidade gasta de gasolina foi de ",gasolina_usada,""," litros" )
+
+fimalgoritmo
