@@ -1,0 +1,21 @@
+algoritmo "Calculo_prestação_em_atraso"
+// Função :
+// Autor : Rafael Archanjo
+// Data : 02/10/2020
+// Seção de Declarações 
+var
+//PRESTACAO <- VALOR + (VALOR * TAXA/100) * TEMPO)
+prestacao : real
+valor : real
+taxa  : real
+tempo : real
+inicio
+escreva ("Escreva o valor: ")
+leia (valor)
+escreva ("Escreva o valor da taxa: ")
+leia (taxa)
+escreva ("Escreva o tempo: ")
+leia (tempo)
+prestacao <- valor+(valor*(taxa/100))*tempo
+escreva ("O valor da prestação é de R$",prestacao)
+fimalgoritmo
