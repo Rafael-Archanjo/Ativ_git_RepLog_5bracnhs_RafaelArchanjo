@@ -1,0 +1,17 @@
+algoritmo "Calcular volume de uma lata"
+// Função :
+// Autor : Rafael Archanjo
+// Data : 02/10/2020
+// Seção de Declarações 
+var
+raio : real
+volume : real
+altura : real
+inicio
+escreva ("Escreva o valor do Raio: ")
+leia (raio)
+escreva ("Escreva o valor da Altura: ")
+leia (altura)
+volume <- pi*(raio^2)*altura
+escreval ("O volume da lata é de ", volume)
+fimalgoritmo
